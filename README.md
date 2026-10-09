@@ -27,3 +27,4 @@ y análisis de logs. Módulo 0614 Despliegue de Aplicaciones Web, 2º DAW.
 
 ## Wireframe y Mockup
 
+![Wireframe](img/Wireframe.pdf)

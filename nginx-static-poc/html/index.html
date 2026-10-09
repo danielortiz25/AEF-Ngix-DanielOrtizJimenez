@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guadalquivir Cloud Tech</title>
+  <meta name="description" content="Aceites del Aljarafe: aceite de oliva virgen extra, aceituna de mesa y visitas a la almazara en Sevilla.">
+  <title>Aceites del Aljarafe</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="cabecera">
-    <img src="img/logo.svg" alt="Guadalquivir Cloud Tech" height="40">
-    <nav>
+    <a href="#inicio"><img src="img/logo.svg" alt="Aceites del Aljarafe" height="40"></a>
+    <nav aria-label="Principal">
       <ul>
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#productos">Productos</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -23,29 +24,30 @@
 
     <section class="hero" id="inicio">
       <div class="hero-texto">
-        <h1>Infraestructura cloud para tu empresa</h1>
-        <p>Migramos y desplegamos plataformas web con contenedores, de forma segura y reproducible.</p>
+        <h1>Aceite de oliva virgen extra de Sevilla</h1>
+        <p>Elaboramos nuestro aceite en el Aljarafe sevillano, de la almazara directamente a tu mesa.</p>
         <a class="btn" href="#contacto">Contáctanos</a>
       </div>
-      <div class="hero-imagen">
-        <span class="etiqueta">Imagen corporativa</span>
-      </div>
+      <figure class="hero-imagen">
+        <img src="img/olivar.svg" alt="Olivar del Aljarafe al atardecer">
+        <figcaption class="etiqueta">Olivares del Aljarafe</figcaption>
+      </figure>
     </section>
 
-    <section class="servicios" id="servicios">
-      <h2>Nuestros servicios</h2>
+    <section class="servicios" id="productos">
+      <h2>Lo que ofrecemos</h2>
       <div class="rejilla">
         <article class="tarjeta">
-          <h3>Infraestructura</h3>
-          <p>Diseño y puesta en marcha de entornos web estables y escalables.</p>
+          <h3>Aceite virgen extra</h3>
+          <p>Primera extracción en frío de aceitunas de nuestros propios olivares.</p>
         </article>
         <article class="tarjeta">
-          <h3>Contenedores</h3>
-          <p>Empaquetado y despliegue de aplicaciones con Docker.</p>
+          <h3>Aceituna de mesa</h3>
+          <p>Variedades tradicionales aliñadas al estilo andaluz.</p>
         </article>
         <article class="tarjeta">
-          <h3>Seguridad</h3>
-          <p>Configuración de servidores con buenas prácticas de hardening.</p>
+          <h3>Visita a la almazara</h3>
+          <p>Descubre cómo elaboramos el aceite, con cata incluida.</p>
         </article>
       </div>
     </section>
@@ -53,8 +55,8 @@
   </main>
 
   <footer class="pie" id="contacto">
-    <span>Guadalquivir Cloud Tech · Sevilla</span>
-    <span>contacto@guadalquivircloud.example</span>
+    <span>Aceites del Aljarafe · Sevilla</span>
+    <address>contacto@aceitesdelaljarafe.example</address>
   </footer>
 
 </body>

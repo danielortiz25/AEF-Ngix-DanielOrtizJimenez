@@ -1,0 +1,26 @@
+services:
+  web:
+    image: nginx:1.27-alpine
+    container_name: srv-nginx-aljarafe
+    restart: unless-stopped
+    ports:
+      # puerto del host : puerto del contenedor
+      - "8080:80"
+    volumes:
+      # Código y configuración en solo lectura
+      - ./html:/usr/share/nginx/html:ro
+      - ./conf/default.conf:/etc/nginx/conf.d/default.conf:ro
+    # Aislamiento del contenedor
+    read_only: true
+    tmpfs:
+      - /var/cache/nginx
+      - /var/run
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - red-corp
+
+networks:
+  red-corp:
+    driver: bridge
